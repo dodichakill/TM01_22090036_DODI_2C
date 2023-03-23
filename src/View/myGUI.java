@@ -39,6 +39,9 @@ public class myGUI {
         submitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                messageValue.setText("");
+                statusValue.setText("");
+                commentValue.setText("");
                 try {
                     ConnectURI koneksiku = new ConnectURI();
                     URL myAddress = koneksiku.buildURL("https://harber.mimoapps.xyz/api/getaccess.php");

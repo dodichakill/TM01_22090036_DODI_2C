@@ -11,16 +11,12 @@ public class Main {
     public static int posX=0,posY=0;
     public static void main(String[] args) {
         JFrame myFrame = new JFrame();
-        myFrame.setSize(400, 300);
+        myFrame.setSize(400, 280);
         myFrame.setLocationRelativeTo(null);
         myFrame.setUndecorated(true);
-
         myGUI content = new myGUI();
-
         myFrame.setContentPane(content.getMyPanel());
-//        myFrame.pack();\
         myFrame.setVisible(true);
-
         myFrame.getRootPane().setBorder(BorderFactory.createMatteBorder(4, 4, 4, 4, Color.decode("#609966")));
 
         content.getMyPanel().addMouseListener(new MouseAdapter()
